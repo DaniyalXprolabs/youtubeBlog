@@ -1,0 +1,8 @@
+<h1>This is my first Ruby on Rails Application</h1>
+<h2>Happy to Learn New Technologies</h2>
+<% @posts.each do |post| %>
+    <h2><%= post.title %></h2>
+    <p><%= truncate(post.body,:length=>35) %></p>
+    <br>
+    <%= link_to "Read Post", post %>
+<% end %>
